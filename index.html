@@ -386,6 +386,18 @@ body.pres #fsHot{display:block}
 #toast{position:fixed;left:50%;top:22px;transform:translate(-50%,-20px);z-index:80;opacity:0;pointer-events:none;transition:.35s;
   font:500 15px var(--bf);color:#E6E9FF;background:rgba(18,18,58,.9);border:1px solid rgba(140,150,230,.35);border-radius:999px;padding:9px 18px;backdrop-filter:blur(12px);white-space:nowrap}
 #toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* new agents slide (Claude Duet / OpenAI Dots / Manus Cue) */
+.mono.lt{background-image:none!important;font:800 24px/1 var(--hf);color:#fff}
+.m-cd{background:radial-gradient(circle at 30% 25%,#E08A68,#8A3A1E)!important;border:2px solid #F4A582;box-shadow:0 0 26px rgba(217,119,87,.5)}
+.m-od{background:radial-gradient(circle at 30% 25%,#22C9A0,#0B5E49)!important;border:2px solid #5EEAD4;box-shadow:0 0 26px rgba(16,163,127,.5)}
+.m-mc{background:radial-gradient(circle at 30% 25%,#A78BFA,#4C1D95)!important;border:2px solid #C4B5FD;box-shadow:0 0 26px rgba(139,92,246,.5)}
+.c-cd{color:#F4A582}.c-od{color:#5EEAD4}.c-mc{color:#C4B5FD}
+.spec.nw td{font-size:22px;line-height:1.45;padding:15px 20px}
+.spec.nw tbody th{font-size:22px;padding:15px 18px}
+.spec.nw thead th{font-size:28px;padding:16px 20px}
+.spec.nw .mute{font-size:18px}
+.spec.nw td.na{color:var(--sub);font-style:italic}
 </style>
 </head>
 <body>
@@ -585,6 +597,45 @@ body.pres #fsHot{display:block}
     </tbody>
   </table>
   <div class="note rv d4" style="margin-top:14px;font-size:18px">*สเปก VM ที่ระบุว่า วัดเอง เป็นค่าที่วัดจากในเครื่อง ไม่ใช่ตัวเลขทางการ · ตรวจสอบราคา ต.ค. 2569</div>
+  <footer class="f"><span>Personal AI Agent · เรื่องเล่าเช้าวันศุกร์ · 6 พ.ย. 2569</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="คู่แข่งหน้าใหม่: Claude Duet · OpenAI Dots · Manus Cue" style="padding-top:52px">
+  <span class="badge rv">บล็อก 2 · เพิ่มเติม: คู่แข่งหน้าใหม่ 🆕</span>
+  <h2 class="t rv d1" style="font-size:48px;margin-top:12px">คู่แข่งหน้าใหม่ — <span class="grad">Claude Duet · OpenAI Dots · Manus Cue</span> ⚔️</h2>
+  <table class="spec nw rv d2">
+    <thead><tr><th style="width:190px"></th>
+      <th style="box-shadow:inset 0 4px 0 #D97757"><div class="hd"><div class="mono lt m-cd xs">C</div><div><span class="c-cd">Claude Duet</span> <small>(Anthropic)</small></div></div></th>
+      <th style="box-shadow:inset 0 4px 0 #10A37F"><div class="hd"><div class="mono lt m-od xs">•</div><div><span class="c-od">OpenAI Dots</span> <small>(ใน ChatGPT)</small></div></div></th>
+      <th style="box-shadow:inset 0 4px 0 #8B5CF6"><div class="hd"><div class="mono lt m-mc xs">M</div><div><span class="c-mc">Manus Cue</span> <small>(ชื่อทางการ “Cue by Manus”)</small></div></div></th></tr></thead>
+    <tbody>
+      <tr><th>🏢 เปิดตัว / สถานะ</th>
+        <td>21 ต.ค. 2569 · <b>Research preview</b> ต้องลงชื่อรอคิว</td>
+        <td>29 ก.ย. 2569 (DevDay) · <b>ทยอยเปิด</b>ให้ผู้ใช้ที่มีสิทธิ์</td>
+        <td>28 ก.ย. 2569 คู่กับ Manus 2.0 · ต้องมี<b>โค้ดเชิญ</b></td></tr>
+      <tr><th>🧠 โมเดล</th>
+        <td><b>Claude Opus 5.5</b> <span class="mute">(เลือกโมเดลเองไม่ได้)</span></td>
+        <td><b>GPT-6 Astra</b> + GPT-6.1 Terra <span class="mute">(เพิ่ม 3 พ.ย.)</span></td>
+        <td class="na">ไม่ระบุ <span class="mute">(ใช้โครงสร้างเดียวกับ Manus)</span></td></tr>
+      <tr><th>⭐ จุดเด่น</th>
+        <td><b>สรุปงานทุกเช้า</b> เฝ้าแอปที่เชื่อมไว้ ทักเมื่อมีเรื่องต้องดู · ทำแดชบอร์ด พยากรณ์ยอดขาย เว็บแอป บน<b>คอมคลาวด์ของตัวเอง</b></td>
+        <td>ทำงาน <b>24/7 บนคอมคลาวด์ของตัวเอง</b> · เชื่อม <b>4,000+ แอป</b> ผ่านปลั๊กอิน · เรียนรู้จาก feedback</td>
+        <td>แต่ละตัวมี<b>อีเมล เบอร์โทร กระเป๋าเงิน คอมพิวเตอร์</b>ของตัวเอง · <b>รับสายแทน</b> · หลายตัว<b>ทำงานเป็นทีม</b>ในกลุ่มแชต</td></tr>
+      <tr><th>💰 ราคา</th>
+        <td><b>รวมในแผน</b> Pro <b>$20</b> / Max / Ultra · ใช้โควตาเดียวกับ Claude</td>
+        <td>Dot แรก<b>รวมในแผน</b> Pro (เริ่ม <b>$100</b>/เดือน) / Business Premium</td>
+        <td><b>ฟรี</b>ช่วง early access · เบอร์โทรคิดเงินแยก <span class="mute">(ราคาไม่ระบุ)</span></td></tr>
+      <tr><th>📱 ใช้งานผ่าน</th>
+        <td>iOS, Android, claude.ai <span class="mute">(เฉพาะ US · ยังไม่มี Team/Enterprise)</span></td>
+        <td>ChatGPT เดสก์ท็อป/เว็บ/มือถือ, <b>Slack, Teams</b>, โทรคุยได้ <span class="mute">(ยกเว้น EEA/สวิส/UK)</span></td>
+        <td>Web, เดสก์ท็อป, Android, iOS · แชตผ่าน <b>LINE</b>/Telegram/Slack/iMessage ได้</td></tr>
+      <tr><th>🛡️ ความปลอดภัย</th>
+        <td><b>ถามก่อน</b> ส่งข้อความ จ่ายเงิน เซ็นเอกสาร ลบไฟล์ · ไม่เห็นรหัสผ่าน</td>
+        <td><b>Custom Rules</b>: อนุญาต / ต้องอนุมัติ / บล็อก · ตรวจอัตโนมัติก่อนทำสิ่งสำคัญ</td>
+        <td>จ่ายเงิน<b>ภายในงบที่ตั้ง</b> และ<b>ยืนยันก่อนจ่าย</b> · เลือกสิทธิ์แอปเองได้</td></tr>
+    </tbody>
+  </table>
+  <div class="note rv d4" style="margin-top:12px;font-size:17px">ข้อมูลจากหน้าทางการของแต่ละค่าย ณ 5 พ.ย. 2569 · ทั้ง 3 ตัวยังอยู่ช่วงพรีวิว/ทยอยเปิด ราคาและฟีเจอร์อาจเปลี่ยน</div>
   <footer class="f"><span>Personal AI Agent · เรื่องเล่าเช้าวันศุกร์ · 6 พ.ย. 2569</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
