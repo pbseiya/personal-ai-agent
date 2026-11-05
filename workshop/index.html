@@ -390,6 +390,27 @@ body.pres #fsHot{display:block}
 .spk-card .spk-ic{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:28px;background:rgba(11,11,36,.6);border:2px solid var(--gold)}
 .spk-card b{display:block;font:700 30px var(--hf)}.spk-card span{font:400 20px var(--bf);color:var(--sub)}
 .info{gap:10px}
+
+/* new agents: Claude Duet / OpenAI Dots / Manus Cue */
+.mono.lt{background-image:none!important;color:#fff}
+.mono.lt.m-cd{background-image:radial-gradient(circle at 30% 25%,#E08A68,#8A3A1E)!important;border:2px solid #F4A582;box-shadow:0 0 22px rgba(217,119,87,.45)}
+.mono.lt.m-od{background-image:radial-gradient(circle at 30% 25%,#22C9A0,#0B5E49)!important;border:2px solid #5EEAD4;box-shadow:0 0 22px rgba(16,163,127,.45)}
+.mono.lt.m-mc{background-image:radial-gradient(circle at 30% 25%,#A78BFA,#4C1D95)!important;border:2px solid #C4B5FD;box-shadow:0 0 22px rgba(139,92,246,.45)}
+.c-cd{color:#F4A582}.c-od{color:#5EEAD4}.c-mc{color:#C4B5FD}
+.ch.cd{box-shadow:inset 0 -4px 0 #D97757}.ch.od{box-shadow:inset 0 -4px 0 #10A37F}.ch.mc{box-shadow:inset 0 -4px 0 #8B5CF6}
+.rc.cd{border-left:5px solid #D97757}.rc.od{border-left:5px solid #10A37F}.rc.mc{border-left:5px solid #8B5CF6}
+.pairs .cell.cd{border-top:3px solid #D97757}.pairs .cell.od{border-top:3px solid #10A37F}.pairs .cell.mc{border-top:3px solid #8B5CF6}
+.spec.nw td{font-size:20px;line-height:1.38;padding:11px 16px}
+.spec.nw tbody th{font-size:20px;width:168px;padding:11px 14px}
+.spec.nw thead th{font-size:24px;padding:12px 16px}
+.spec.nw thead small{font-size:14px}
+.spec.nw .mute{font-size:15px}
+.spec.nw td.na{color:var(--sub)}
+.srcnote{margin-top:10px;font:400 15px/1.35 var(--bf);color:#8B93B8}
+.newfit{margin-top:16px;display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:14px;align-items:center}
+.newfit .qt{font:700 20px var(--hf);color:#F4A582}
+.newfit .q{display:flex;gap:10px;align-items:center;padding:10px 14px;font:500 18px/1.35 var(--bf)}
+.newfit .q b.mk{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:800 15px var(--hf);flex:none}
 </style>
 </head>
 <body>
@@ -415,7 +436,7 @@ body.pres #fsHot{display:block}
       <div class="bar1 rv d3"></div>
       <div class="info rv d4">
         <div><i>🤖</i>Agent คืออะไร และทำงานยังไง</div>
-        <div><i>⚔️</i>เทียบ Muse · Grok Bot · Hermes ทีละรอบ</div>
+        <div><i>⚔️</i>เทียบ 6 ตัวทีละรอบ — Muse · Grok · Hermes + คู่แข่งใหม่</div>
         <div><i>🧰</i>ใช้งานจริง + เดโม + ใช้ให้ปลอดภัย</div>
         <div><i>🎯</i>เลือกตัวที่เหมาะกับคุณ</div>
       </div>
@@ -486,8 +507,47 @@ body.pres #fsHot{display:block}
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
-<section class="slide" data-title="เทียบทีละรอบ: ตัวตน &amp; ทีมงาน ⚔️" style="padding-top:56px">
-  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ</span>
+<section class="slide" data-title="คู่แข่งหน้าใหม่: Claude Duet · OpenAI Dots · Manus Cue" style="padding-top:44px">
+  <span class="badge rv">บล็อก 2 · เพิ่มเติม: คู่แข่งหน้าใหม่ 🆕</span>
+  <h2 class="t rv d1" style="font-size:46px;margin-top:10px">คู่แข่งหน้าใหม่ — <span class="grad">Claude Duet · OpenAI Dots · Manus Cue</span> ⚔️</h2>
+  <table class="spec nw rv d2">
+    <thead><tr><th style="width:168px"></th>
+      <th style="box-shadow:inset 0 4px 0 #D97757"><div class="hd"><div class="mono lt m-cd xs">C</div><div><span class="c-cd">Claude Duet</span> <small>(Anthropic)</small></div></div></th>
+      <th style="box-shadow:inset 0 4px 0 #10A37F"><div class="hd"><div class="mono lt m-od xs">D</div><div><span class="c-od">OpenAI Dots</span> <small>(ใน ChatGPT)</small></div></div></th>
+      <th style="box-shadow:inset 0 4px 0 #8B5CF6"><div class="hd"><div class="mono lt m-mc xs">M</div><div><span class="c-mc">Manus Cue</span> <small>(ชื่อทางการ “Cue by Manus”)</small></div></div></th></tr></thead>
+    <tbody>
+      <tr><th>🏢 เปิดตัว</th>
+        <td>21 ต.ค. 2569 · <b>Research preview</b> ลงชื่อรอคิว · เฉพาะ US</td>
+        <td>29 ก.ย. 2569 (DevDay) · <b>ทยอยเปิด</b> · Pro ไม่มีใน EEA / สวิส / UK</td>
+        <td>28 ก.ย. 2569 คู่กับ Manus 2.0 · <b>early access</b> ต้องมีโค้ดเชิญ</td></tr>
+      <tr><th>🧠 โมเดล</th>
+        <td><b>Claude Opus 5.5</b> <span class="mute">(เลือกเองไม่ได้)</span></td>
+        <td><b>GPT-6 Astra</b> + GPT-6.1 Terra <span class="mute">(เพิ่ม 3 พ.ย. 2569)</span></td>
+        <td class="na">ไม่ระบุ <span class="mute">(ใช้โครงสร้างเดียวกับ Manus แต่ไม่เปิดชื่อโมเดล)</span></td></tr>
+      <tr><th>⭐ จุดเด่น</th>
+        <td><b>สรุปเช้า</b> และเฝ้าแอปที่เชื่อม · ทำงานต่อบน<b>คอมคลาวด์ของตัวเอง</b> แม้ปิดแอป</td>
+        <td>เอเจนต์<b>เปิดตลอด</b> บนคอมคลาวด์ของตัวเอง · เชื่อม <b>4,000+ แอป</b> · เรียนรู้จาก feedback</td>
+        <td>แต่ละตัวมี<b>อีเมล เบอร์โทร กระเป๋าเงิน คอมพิวเตอร์</b> · <b>รับสายแทน</b> · ทำ<b>ทีมในกลุ่มแชต</b></td></tr>
+      <tr><th>💰 ราคา</th>
+        <td>รวมใน Pro <b>$20</b> / Max / Ultra · ใช้โควตาเดียวกับ Claude</td>
+        <td>Dot แรกอยู่ใน Pro <span class="mute">(เริ่ม $100/เดือน)</span> หรือ Business Premium</td>
+        <td><b>ฟรี</b>ช่วง early access · เบอร์โทรคิดเพิ่ม <span class="mute">(หน้าช่วยเหลือไม่ลงตัวเลข · App Store มีรายการเช่น US $9.99)</span></td></tr>
+      <tr><th>📱 ช่องทาง</th>
+        <td>iOS, Android, claude.ai <span class="mute">(ยังไม่มี Team/Enterprise)</span></td>
+        <td>ChatGPT, <b>Slack, Teams</b> · โทรในแอปได้</td>
+        <td>เว็บ, เดสก์ท็อป, มือถือ · แชต <b>LINE</b> / Telegram / Slack / iMessage</td></tr>
+      <tr><th>🛡️ ปลอดภัย</th>
+        <td><b>ถามก่อน</b> ส่ง จ่าย เซ็น หรือลบ · ไม่เห็นรหัสผ่าน</td>
+        <td>สิทธิ์รายการ: <b>อนุญาต / ต้องอนุมัติ / บล็อก</b></td>
+        <td>จ่ายใน<b>งบที่ตั้ง</b> และ<b>อนุมัติก่อนจ่าย</b> · เลือกสิทธิ์แอปเอง</td></tr>
+    </tbody>
+  </table>
+  <div class="srcnote rv d4">แหล่งข้อมูล ณ 5 พ.ย. 2569: claude.com/resources/articles/claude-duet · support.claude.com/en/articles/17631495 · engadget.com/2300253/how-to-use-claude-duet · openai.com/index/introducing-dots · help.openai.com/en/articles/20001530 · manus.im/blog/introducing-manus-2-0 · help.manus.im (17190150, 14178640, 11711111) · App Store “Cue by Manus”</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="เทียบทีละรอบ: ตัวตน &amp; ทีมงาน · ชุดเดิม ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · ชุดเดิม</span>
   <h2 class="t rv d1" style="font-size:50px;margin-top:14px">เทียบทีละรอบ: ตัวตน &amp; ทีมงาน ⚔️</h2>
   <div class="colhead rv d1"><div class="ch mu"><div class="mono m-m xs"></div><span class="cm-mu">Muse</span></div><div class="ch gk"><div class="mono m-g xs"></div><span class="slv">Grok Bot</span></div><div class="ch hm"><div class="mono m-h xs"></div><span class="cm-hm">Hermes</span></div></div>
   <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 1</span><span class="rq">ต่างกันตรงไหน 🧬</span></div>
@@ -499,8 +559,21 @@ body.pres #fsHot{display:block}
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
-<section class="slide" data-title="เทียบทีละรอบ: สมอง &amp; ข้อมูล ⚔️" style="padding-top:56px">
-  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ</span>
+<section class="slide" data-title="เทียบทีละรอบ: ตัวตน &amp; ทีมงาน · คู่แข่งใหม่ ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · คู่แข่งใหม่</span>
+  <h2 class="t rv d1" style="font-size:46px;margin-top:14px">คู่แข่งใหม่: ตัวตน &amp; ทีมงาน ⚔️</h2>
+  <div class="colhead rv d1"><div class="ch cd"><div class="mono lt m-cd xs">C</div><span class="c-cd">Claude Duet</span></div><div class="ch od"><div class="mono lt m-od xs">D</div><span class="c-od">OpenAI Dots</span></div><div class="ch mc"><div class="mono lt m-mc xs">M</div><span class="c-mc">Manus Cue</span></div></div>
+  <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 1</span><span class="rq">ต่างกันตรงไหน 🧬</span></div>
+<div class="r3"><div class="card rc cd">เอเจนต์เชิงรุกของ <b>Anthropic</b> · ส่ง<b>สรุปเช้า</b> เฝ้าแอปที่เชื่อม · รันบน<b>คอมคลาวด์ของตัวเอง</b></div><div class="card rc od">เอเจนต์<b>เปิดตลอด</b>ของ OpenAI · <b>คอมคลาวด์ของตัวเอง</b> · เชื่อม <b>4,000+ แอป</b></div><div class="card rc mc">แอปแยก <b>Cue by Manus</b> · แต่ละตัวมี<b>อีเมล เบอร์ กระเป๋าเงิน คอมพิวเตอร์</b> · <b>รับสายแทน</b>ได้</div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>เลขาที่เดินมาทักก่อน ☕ vs ผู้ช่วยที่มีเบอร์และอีเมลของตัวเอง 📞</span></div></div><div class="round rv d3"><div class="rhd"><span class="rno">รอบ 2</span><span class="rq">ทำงานเป็นทีม 👥</span></div>
+<div class="r3"><div class="card rc cd na"><span class="dash2">—</span><span>ไม่ระบุ</span></div><div class="card rc od">ตอนนี้มี <b>Dot ตัวแรก</b> · ทีมหลายตัวเป็น<b>แผนในอนาคต</b> · specialist dots อยู่ช่วง <b>pilot องค์กร</b></div><div class="card rc mc">หลายตัวทำ<b>เป็นทีมในกลุ่มแชต</b> ส่งงานต่อกัน · คนตัดสินรอบสุดท้าย</div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>ผู้ช่วยคนเดียว vs กลุ่มแชตที่แบ่งงานกันเอง 👥</span></div></div>
+  <div class="srcnote">แหล่งทางการ Anthropic · OpenAI · Manus · 5 พ.ย. 2569 · URL เต็มอยู่ในสไลด์คู่แข่งหน้าใหม่</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="เทียบทีละรอบ: สมอง &amp; ข้อมูล · ชุดเดิม ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · ชุดเดิม</span>
   <h2 class="t rv d1" style="font-size:50px;margin-top:14px">เทียบทีละรอบ: สมอง &amp; ข้อมูล ⚔️</h2>
   <div class="colhead rv d1"><div class="ch mu"><div class="mono m-m xs"></div><span class="cm-mu">Muse</span></div><div class="ch gk"><div class="mono m-g xs"></div><span class="slv">Grok Bot</span></div><div class="ch hm"><div class="mono m-h xs"></div><span class="cm-hm">Hermes</span></div></div>
   <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 3</span><span class="rq">สมองข้างใน 🧠</span></div>
@@ -512,8 +585,21 @@ body.pres #fsHot{display:block}
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
-<section class="slide" data-title="เทียบทีละรอบ: ค่าใช้จ่าย &amp; ช่องทาง ⚔️" style="padding-top:56px">
-  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ</span>
+<section class="slide" data-title="เทียบทีละรอบ: สมอง &amp; ข้อมูล · คู่แข่งใหม่ ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · คู่แข่งใหม่</span>
+  <h2 class="t rv d1" style="font-size:46px;margin-top:14px">คู่แข่งใหม่: สมอง &amp; ข้อมูล ⚔️</h2>
+  <div class="colhead rv d1"><div class="ch cd"><div class="mono lt m-cd xs">C</div><span class="c-cd">Claude Duet</span></div><div class="ch od"><div class="mono lt m-od xs">D</div><span class="c-od">OpenAI Dots</span></div><div class="ch mc"><div class="mono lt m-mc xs">M</div><span class="c-mc">Manus Cue</span></div></div>
+  <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 3</span><span class="rq">สมองข้างใน 🧠</span></div>
+<div class="r3"><div class="card rc cd"><b>Claude Opus 5.5</b> · เลือกโมเดลเองไม่ได้</div><div class="card rc od"><b>GPT-6 Astra</b> · ตั้งแต่ 3 พ.ย. 2569 มี <b>GPT-6.1 Terra</b> · ใช้คนละโมเดลตามชิ้นงาน</div><div class="card rc mc na"><span class="dash2">—</span><span><b>ไม่ระบุ</b> · ใช้โครงสร้างเดียวกับ Manus แต่ไม่เปิดชื่อโมเดล</span></div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>เครื่องที่ล็อกหัวชาร์จไว้ 🔌 vs ยังไม่บอกว่าใช้หัวอะไร</span></div></div><div class="round rv d3"><div class="rhd"><span class="rno">รอบ 4</span><span class="rq">ข้อมูลอยู่ที่ไหน 🔐</span></div>
+<div class="r3"><div class="card rc cd"><b>คอมคลาวด์ของตัวเอง</b> มีเบราว์เซอร์ · ผูกบัญชี Claude · ภูมิภาคที่เก็บข้อมูล <b>ไม่ระบุ</b></div><div class="card rc od"><b>คอมคลาวด์ของตัวเอง</b> · เครื่องเราแยก เชื่อมได้ถ้าอนุญาต · แผนธุรกิจไม่นำไปฝึกโมเดลเป็นค่าเริ่มต้น</div><div class="card rc mc"><b>คอมพิวเตอร์ของเอเจนต์เอง</b> · เป็นคลาวด์หรือไม่ และสเปกเครื่อง <b>ไม่ระบุ</b></div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>ฝากงานบนเครื่องของบริษัท 🏦 — สเปกตู้เซฟไม่ได้เปิดทุกเจ้า</span></div></div>
+  <div class="srcnote">แหล่งทางการ Anthropic · OpenAI · Manus · 5 พ.ย. 2569 · URL เต็มอยู่ในสไลด์คู่แข่งหน้าใหม่</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="เทียบทีละรอบ: ค่าใช้จ่าย &amp; ช่องทาง · ชุดเดิม ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · ชุดเดิม</span>
   <h2 class="t rv d1" style="font-size:50px;margin-top:14px">เทียบทีละรอบ: ค่าใช้จ่าย &amp; ช่องทาง ⚔️</h2>
   <div class="colhead rv d1"><div class="ch mu"><div class="mono m-m xs"></div><span class="cm-mu">Muse</span></div><div class="ch gk"><div class="mono m-g xs"></div><span class="slv">Grok Bot</span></div><div class="ch hm"><div class="mono m-h xs"></div><span class="cm-hm">Hermes</span></div></div>
   <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 5</span><span class="rq">จ่ายจริงเท่าไร 💰</span></div>
@@ -525,8 +611,21 @@ body.pres #fsHot{display:block}
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
-<section class="slide" data-title="เทียบทีละรอบ: ความจำ &amp; ความง่าย ⚔️" style="padding-top:56px">
-  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ</span>
+<section class="slide" data-title="เทียบทีละรอบ: ค่าใช้จ่าย &amp; ช่องทาง · คู่แข่งใหม่ ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · คู่แข่งใหม่</span>
+  <h2 class="t rv d1" style="font-size:46px;margin-top:14px">คู่แข่งใหม่: ค่าใช้จ่าย &amp; ช่องทาง ⚔️</h2>
+  <div class="colhead rv d1"><div class="ch cd"><div class="mono lt m-cd xs">C</div><span class="c-cd">Claude Duet</span></div><div class="ch od"><div class="mono lt m-od xs">D</div><span class="c-od">OpenAI Dots</span></div><div class="ch mc"><div class="mono lt m-mc xs">M</div><span class="c-mc">Manus Cue</span></div></div>
+  <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 5</span><span class="rq">จ่ายจริงเท่าไร 💰</span></div>
+<div class="r3"><div class="card rc cd">รวมใน Pro <b>$20</b> / Max / Ultra · ใช้โควตาเดียวกับ Claude · ไม่มีค่าเพิ่มในช่วงพรีวิว</div><div class="card rc od">Dot แรกอยู่ใน Pro <b>(เริ่ม $100/เดือน)</b> หรือ <b>Business Premium</b></div><div class="card rc mc"><b>ฟรี</b>ช่วง early access ด้วยโค้ดเชิญ · เบอร์โทรคิดเพิ่ม หน้าช่วยเหลือ<b>ไม่ระบุราคา</b> · App Store มีรายการเช่น US <b>$9.99</b></div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>รวมในค่าสมาชิกที่มีอยู่ 🎫 vs ของแถมที่เบอร์โทรคิดแยก</span></div></div><div class="round rv d3"><div class="rhd"><span class="rno">รอบ 6</span><span class="rq">สั่งงานจากที่ไหน 📱</span></div>
+<div class="r3"><div class="card rc cd"><b>iOS, Android, claude.ai</b> · เฉพาะ <b>US</b> · ยังไม่มี Team/Enterprise</div><div class="card rc od"><b>ChatGPT, Slack, Teams</b> · โทรในแอปได้ · Pro ไม่มีใน <b>EEA / สวิส / UK</b></div><div class="card rc mc">เว็บ · เดสก์ท็อป · มือถือ · แชต <b>LINE / Telegram / Slack / iMessage</b> · รับสายได้</div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>แอปของค่าย 📱 vs ทักในแชตที่ใช้อยู่แล้ว รวม LINE 💚</span></div></div>
+  <div class="srcnote">แหล่งทางการ Anthropic · OpenAI · Manus · App Store · 5 พ.ย. 2569 · URL เต็มอยู่ในสไลด์คู่แข่งหน้าใหม่</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="เทียบทีละรอบ: ความจำ &amp; ความง่าย · ชุดเดิม ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · ชุดเดิม</span>
   <h2 class="t rv d1" style="font-size:50px;margin-top:14px">เทียบทีละรอบ: ความจำ &amp; ความง่าย ⚔️</h2>
   <div class="colhead rv d1"><div class="ch mu"><div class="mono m-m xs"></div><span class="cm-mu">Muse</span></div><div class="ch gk"><div class="mono m-g xs"></div><span class="slv">Grok Bot</span></div><div class="ch hm"><div class="mono m-h xs"></div><span class="cm-hm">Hermes</span></div></div>
   <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 7</span><span class="rq">จำเราได้ไหม 📒</span></div>
@@ -538,8 +637,21 @@ body.pres #fsHot{display:block}
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
-<section class="slide" data-title="เทียบทีละรอบ: ความปลอดภัย ⚔️" style="padding-top:56px">
-  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ</span>
+<section class="slide" data-title="เทียบทีละรอบ: ความจำ &amp; ความง่าย · คู่แข่งใหม่ ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · คู่แข่งใหม่</span>
+  <h2 class="t rv d1" style="font-size:46px;margin-top:14px">คู่แข่งใหม่: ความจำ &amp; ความง่าย ⚔️</h2>
+  <div class="colhead rv d1"><div class="ch cd"><div class="mono lt m-cd xs">C</div><span class="c-cd">Claude Duet</span></div><div class="ch od"><div class="mono lt m-od xs">D</div><span class="c-od">OpenAI Dots</span></div><div class="ch mc"><div class="mono lt m-mc xs">M</div><span class="c-mc">Manus Cue</span></div></div>
+  <div class="round rv d2"><div class="rhd"><span class="rno">รอบ 7</span><span class="rq">จำเราได้ไหม 📒</span></div>
+<div class="r3"><div class="card rc cd">นำ<b>ความจำ สกิล และแอป</b>จากบัญชี Claude · <b>ค้นแชตเก่า</b>ได้</div><div class="card rc od">เริ่มจากความจำ ChatGPT · สร้าง<b>ความจำของตัวเอง</b>จากงานและแอปที่เชื่อม</div><div class="card rc mc"><b>Memory และ Dream</b> จำความชอบ แผน และงานที่ค้างไว้ <span style="color:#9AA3C7">(ตามหน้าร้านแอป)</span></div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>เปิดสมุดเล่มเดิมของบัญชีที่มีอยู่ 📒 แล้วเขียนหน้าใหม่เพิ่ม</span></div></div><div class="round rv d3"><div class="rhd"><span class="rno">รอบ 8</span><span class="rq">เริ่มใช้ยากแค่ไหน 🧰</span></div>
+<div class="r3"><div class="card rc cd"><b>Research preview</b> · ลงชื่อ<b>รอคิว</b> · เชิญเป็นระลอก · ต้องเป็น Pro/Max/Ultra ใน US</div><div class="card rc od">สร้างในแอป ChatGPT <b>เดสก์ท็อปหรือเว็บ</b> แล้วใช้ต่อบนมือถือ · <b>ทยอยเปิด</b> · Pro อายุ <b>18+</b></div><div class="card rc mc">ต้องมี<b>โค้ดเชิญ</b> · แอป <b>iOS</b> อยู่บน App Store แล้ว · เว็บ เดสก์ท็อป และมือถือ</div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>ต่อคิวหน้าร้าน 🎟️ vs ได้บัตรเชิญแล้วเดินเข้าได้</span></div></div>
+  <div class="srcnote">แหล่งทางการ Anthropic · OpenAI · Manus · App Store · 5 พ.ย. 2569 · URL เต็มอยู่ในสไลด์คู่แข่งหน้าใหม่</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="เทียบทีละรอบ: ความปลอดภัย · ชุดเดิม ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · ชุดเดิม</span>
   <h2 class="t rv d1" style="font-size:50px;margin-top:14px">เทียบทีละรอบ: ความปลอดภัย ⚔️</h2>
   <div class="colhead rv d1"><div class="ch mu"><div class="mono m-m xs"></div><span class="cm-mu">Muse</span></div><div class="ch gk"><div class="mono m-g xs"></div><span class="slv">Grok Bot</span></div><div class="ch hm"><div class="mono m-h xs"></div><span class="cm-hm">Hermes</span></div></div>
   <div class="r9"><div class="round rv d2"><div class="rhd"><span class="rno">รอบ 9</span><span class="rq">ใครปลอดภัยกว่า 🛡️</span></div>
@@ -549,12 +661,32 @@ body.pres #fsHot{display:block}
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
-<section class="slide" data-title="สรุปคู่เทียบ">
-  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · สรุป</span>
+<section class="slide" data-title="เทียบทีละรอบ: ความปลอดภัย · คู่แข่งใหม่ ⚔️" style="padding-top:56px">
+  <span class="badge rv">บล็อก 2 · เทียบทีละรอบ · คู่แข่งใหม่</span>
+  <h2 class="t rv d1" style="font-size:46px;margin-top:14px">คู่แข่งใหม่: ความปลอดภัย ⚔️</h2>
+  <div class="colhead rv d1"><div class="ch cd"><div class="mono lt m-cd xs">C</div><span class="c-cd">Claude Duet</span></div><div class="ch od"><div class="mono lt m-od xs">D</div><span class="c-od">OpenAI Dots</span></div><div class="ch mc"><div class="mono lt m-mc xs">M</div><span class="c-mc">Manus Cue</span></div></div>
+  <div class="r9"><div class="round rv d2"><div class="rhd"><span class="rno">รอบ 9</span><span class="rq">ใครกุมปุ่มอนุมัติ 🛡️</span></div>
+<div class="r3"><div class="card rc cd"><b>ถามก่อน</b> ส่งข้อความ จ่ายเงิน เซ็นเอกสาร หรือลบ · <b>ไม่เห็นรหัสผ่าน</b>หรือโทเคนล็อกอิน</div><div class="card rc od">ตั้งสิทธิ์รายการ <b>อนุญาต / ต้องอนุมัติ / บล็อก</b> · มี auto-review ก่อนการกระทำที่กระทบบัญชี</div><div class="card rc mc">จ่ายได้ใน<b>งบที่ตั้ง</b> และ<b>ต้องอนุมัติก่อนจ่าย</b> · เลือกสิทธิ์แอปเองได้</div></div>
+<div class="ana"><b>💡 อุปมา:</b><span>ผู้ช่วยเตรียมของ 🧺 — กุญแจส่งของและจ่ายเงินยังอยู่ในมือเรา 🔑</span></div></div></div><div class="warn rv d4"><span class="big">⚠️</span><div><h4>พลาดเมื่อไหร่ <span class="pk">คนรับผิดชอบคือเรา</span></h4><p>อีเมลกับเงิน — <b>เอเจนต์ร่าง</b> แต่ <b>คนกดอนุมัติ</b> เสมอ ✍️</p></div></div>
+  <div class="srcnote">แหล่งทางการ Anthropic · OpenAI · Manus · App Store · 5 พ.ย. 2569 · URL เต็มอยู่ในสไลด์คู่แข่งหน้าใหม่</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="สรุปคู่เทียบ · ชุดเดิม">
+  <span class="badge rv">บล็อก 2 · สรุป · ชุดเดิม</span>
   <h2 class="t rv d1">สรุปคู่เทียบ — <span class="grad">ทีมสำเร็จรูปบนคลาวด์ vs ผู้ช่วยเลี้ยงเอง</span> 🧾</h2>
   <div class="pairs rv d2"><div></div><div class="h cm-mu"><div class="mono m-m xs"></div>Muse</div><div class="h slv"><div class="mono m-g xs"></div><span class="slv">Grok Bot</span></div><div class="h cm-hm"><div class="mono m-h xs"></div>Hermes</div><div class="lab">🏷️ ภาพรวม</div><div class="cell mu">ผู้ช่วยชีวิตประจำวันของ Meta</div><div class="cell gk"><b>ทีมสำเร็จรูป</b>บนคลาวด์</div><div class="cell hm"><b>ผู้ช่วยที่เลี้ยงเอง</b></div><div class="lab">🧠 สมอง</div><div class="cell mu">Muse Spark 1.3</div><div class="cell gk">สมองที่<b>ระบบเลือกให้</b></div><div class="cell hm">สมองที่<b>เราเลือกเอง</b></div><div class="lab">🏠 ข้อมูล</div><div class="cell mu">Muse Secure VM</div><div class="cell gk">คลาวด์</div><div class="cell hm">ในบ้าน (เครื่องเรา)</div><div class="lab">💰 ราคา</div><div class="cell mu">ฟรี / $20 / $100</div><div class="cell gk">เริ่ม $30/เดือน</div><div class="cell hm">ฟรี + ค่าโมเดล</div><div class="lab">📱 ช่องทาง</div><div class="cell mu">Web · มือถือ · WhatsApp</div><div class="cell gk">แอปของตัวเอง</div><div class="cell hm">LINE · Telegram · 20+ แอปแชต</div></div>
   <div class="warn rv d4" style="padding:16px 28px;margin-top:22px"><span class="big" style="font-size:40px">🤝</span><div><h4 style="font-size:28px">ไม่ว่าตัวไหน — <span class="pk">ถ้าพลาด คนรับคือเรา</span></h4></div></div>
   <div class="credit">📺 อ้างอิงบางส่วน: Data-Espresso, ข้อมูล ณ 26 ต.ค. 2569</div>
+  <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
+</section>
+
+<section class="slide" data-title="สรุปคู่เทียบ · คู่แข่งใหม่">
+  <span class="badge rv">บล็อก 2 · สรุป · คู่แข่งใหม่</span>
+  <h2 class="t rv d1">สรุปคู่แข่งใหม่ — <span class="grad">Duet · Dots · Cue</span> 🧾</h2>
+  <div class="pairs rv d2"><div></div><div class="h c-cd"><div class="mono lt m-cd xs">C</div>Claude Duet</div><div class="h c-od"><div class="mono lt m-od xs">D</div>OpenAI Dots</div><div class="h c-mc"><div class="mono lt m-mc xs">M</div>Manus Cue</div><div class="lab">🏷️ ภาพรวม</div><div class="cell cd">เอเจนต์เชิงรุก · สรุปเช้า</div><div class="cell od">เอเจนต์เปิดตลอด · 4,000+ แอป</div><div class="cell mc">แต่ละตัวมีอีเมล เบอร์ กระเป๋า คอม</div><div class="lab">🧠 สมอง</div><div class="cell cd">Claude Opus 5.5</div><div class="cell od">GPT-6 Astra + GPT-6.1 Terra</div><div class="cell mc">ไม่ระบุ</div><div class="lab">🏠 ข้อมูล</div><div class="cell cd">คอมคลาวด์ของตัวเอง</div><div class="cell od">คอมคลาวด์ของตัวเอง</div><div class="cell mc">คอมของเอเจนต์เอง · สเปกไม่ระบุ</div><div class="lab">💰 ราคา</div><div class="cell cd">รวม Pro $20 / Max / Ultra</div><div class="cell od">Dot แรกใน Pro (เริ่ม $100) / Business Premium</div><div class="cell mc">ฟรีช่วง early access · เบอร์โทรคิดเพิ่ม</div><div class="lab">📱 ช่องทาง</div><div class="cell cd">iOS · Android · claude.ai (US)</div><div class="cell od">ChatGPT · Slack · Teams</div><div class="cell mc">LINE · Telegram · Slack · iMessage</div></div>
+  <div class="warn rv d4" style="padding:16px 28px;margin-top:22px"><span class="big" style="font-size:40px">🤝</span><div><h4 style="font-size:28px">ไม่ว่าตัวไหน — <span class="pk">ถ้าพลาด คนรับคือเรา</span></h4></div></div>
+  <div class="srcnote">แหล่งทางการ Anthropic · OpenAI · Manus · App Store · 5 พ.ย. 2569 · URL เต็มอยู่ในสไลด์คู่แข่งหน้าใหม่</div>
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
@@ -589,7 +721,7 @@ body.pres #fsHot{display:block}
         <td>CLI/TUI, แอปเดสก์ท็อป, gateway <b>27+</b> แพลตฟอร์ม <span class="mute">(Telegram, Discord, Slack, LINE, Teams, iMessage)</span></td></tr>
     </tbody>
   </table>
-  <div class="note rv d4" style="margin-top:14px;font-size:18px">*สเปก VM ที่ระบุว่า วัดเอง เป็นค่าที่วัดจากในเครื่อง ไม่ใช่ตัวเลขทางการ · ตรวจสอบราคา ต.ค. 2569</div>
+  <div class="note rv d4" style="margin-top:8px;font-size:16px">*สเปก VM ที่วัดเอง ไม่ใช่ตัวเลขทางการ · ราคา ต.ค. 2569 · สเปกเครื่องของ Duet / Dots / Cue ไม่ระบุ — ดูสไลด์รอบ ณ 5 พ.ย. 2569</div>
   <footer class="f"><span>Personal AI Agent · ผู้ช่วยส่วนตัว · Workshop</span><span>วิทยากร: Pongsak Boonpalit</span></footer>
 </section>
 
@@ -659,6 +791,10 @@ body.pres #fsHot{display:block}
     <div class="card pillar pl-hm rv d4"><div class="ph"><div class="mono m-h"></div><div><h3 class="cm-hm">Hermes</h3><div class="if">เลือกถ้าคุณ…</div></div></div>
       <ul><li>🏠 ข้อมูลส่วนตัว<b>ห้ามออกนอกบ้าน</b></li><li>💚 อยาก<b>สั่งงานผ่าน LINE</b></li><li>🤖 มี <b>ChatGPT</b> อยู่แล้ว</li></ul></div>
   </div>
+  <div class="newfit rv d5"><span class="qt">🆕 คู่แข่งใหม่</span>
+    <div class="card q"><b class="mk mono lt m-cd">C</b><span><b class="c-cd">Claude Duet</b> — สรุปเช้า · รวมใน Pro $20 ขึ้นไป · เฉพาะ US</span></div>
+    <div class="card q"><b class="mk mono lt m-od">D</b><span><b class="c-od">OpenAI Dots</b> — อยู่ใน ChatGPT · Slack / Teams</span></div>
+    <div class="card q"><b class="mk mono lt m-mc">M</b><span><b class="c-mc">Manus Cue</b> — ทีมเอเจนต์ · แชตผ่าน LINE</span></div></div>
   <div class="quick rv d5"><span class="qt">🚀 เริ่มใน 5 นาที</span>
     <div class="card q"><b>1</b>เลือกงานเล็ก ๆ ที่ทำซ้ำทุกวัน</div>
     <div class="card q"><b style="background:var(--pink);color:#fff">2</b>สั่งเป็นภาษาธรรมดา + ให้สิทธิ์เท่าที่จำเป็น</div>
@@ -672,7 +808,7 @@ body.pres #fsHot{display:block}
   <div class="end">
     <span class="badge rv">บล็อก 6 · สรุป + Q&amp;A</span>
     <div class="quote rv d1">“AI Agent ที่ดี ไม่ได้แค่ <span class="pk">ตอบ</span> —<br>แต่ช่วย <span class="cy">ลงมือทำ</span> โดยมี<span class="gold">เรา</span>เป็นคนกดอนุมัติ”</div>
-    <div class="take rv d3"><span>⚡ ใช้ทันที → <b class="slv">Grok Bot</b></span><span>🏠 ข้อมูลในบ้าน / LINE → <b class="cm-hm">Hermes</b></span><span>📱 ชีวิตประจำวัน → <b class="cm-mu">Muse</b></span><span>🛡️ อีเมล &amp; เงิน: บอตร่าง คนกดส่ง</span></div>
+    <div class="take rv d3"><span>⚡ ใช้ทันที → <b class="slv">Grok Bot</b></span><span>🏠 ข้อมูลในบ้าน / LINE → <b class="cm-hm">Hermes</b></span><span>📱 ชีวิตประจำวัน → <b class="cm-mu">Muse</b></span><span>🌅 สรุปเช้า / US → <b class="c-cd">Claude Duet</b></span><span>💬 อยู่ใน ChatGPT → <b class="c-od">OpenAI Dots</b></span><span>👥 ทีมเอเจนต์ / LINE → <b class="c-mc">Manus Cue</b></span><span>🛡️ อีเมล &amp; เงิน: เอเจนต์ร่าง คนกดอนุมัติ</span></div>
     <div class="qa rv d4">🙋 <b>Q&amp;A</b> — ถามได้เลยครับ อยากให้ Agent ช่วยงานไหนก่อน?</div>
     <div class="thx rv d5"><span class="grad">ขอบคุณทุกท่านครับ</span> 🙏</div>
     <div class="spk rv d5">Pongsak Boonpalit · AI Specialist · AI · Automation · Digital Transformation</div>
@@ -683,7 +819,7 @@ body.pres #fsHot{display:block}
 </div></div>
 
 <div id="nav">
-  <button id="bPrev">← ก่อนหน้า</button><span id="cnt">1 / 15</span><button id="bNext" class="prim">ถัดไป →</button>
+  <button id="bPrev">← ก่อนหน้า</button><span id="cnt">1 / 22</span><button id="bNext" class="prim">ถัดไป →</button>
   <button id="bToc">☰ สารบัญ</button><button id="bScroll">📜 เลื่อนอ่าน</button><button id="bFull">⛶ เต็มจอ</button>
 </div>
 <div id="fsHot"></div><div id="toast"></div>
